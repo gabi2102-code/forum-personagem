@@ -21,3 +21,13 @@ body {
 nav {
     display: none;
 }
+#login {
+    background-image: url('assets/dora fundo.jfif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

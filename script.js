@@ -8,13 +8,9 @@ function login() {
         return;
     }
 
-    if (user === "admin" && pass === "1234") {
-        document.getElementById("login").style.display = "none";
-        document.getElementById("menu").style.display = "block";
-        mostrar("home");
-    } else {
-        erro.innerText = "Usuário ou senha incorretos!";
-    }
+    document.getElementById("login").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+    mostrar("home");
 }
 
 function mostrar(id) {
