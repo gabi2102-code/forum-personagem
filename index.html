@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora Aventureira</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login" class="tela ativa">
+    <div class="login-box">
+        <h2 class="text-center text-success">Login - Dora</h2>
+
+        <input type="text" id="usuario" class="form-control mb-2" placeholder="Usuário">
+        <input type="password" id="senha" class="form-control mb-2" placeholder="Senha">
+
+        <button class="btn btn-success w-100" onclick="login()">Entrar</button>
+
+        <p id="erro" class="text-danger mt-2"></p>
+    </div>
+</div>
+
+
+<nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+        <span class="navbar-brand">Dora Aventureira</span>
+        <div>
+            <button class="btn btn-light" onclick="mostrar('home')">Home</button>
+            <button class="btn btn-light" onclick="mostrar('historia')">História</button>
+            <button class="btn btn-light" onclick="mostrar('forum')">Fórum</button>
+        </div>
+    </div>
+</nav>
+
+<div id="home" class="tela container mt-5 text-center">
+    <h1>Bem-vindo ao mundo da Dora!</h1>
+    <p>A Dora Aventureira é uma menina curiosa e corajosa que adora explorar o mundo. Ela sempre sai em aventuras junto com seu melhor amigo, o macaco Botas. Durante suas jornadas, Dora costuma pedir ajuda pra quem tá assistindo, fazendo perguntas e ensinando palavras em inglês e espanhol.
+Ela sempre carrega sua mochila, que tem tudo que ela precisa, e usa um mapa falante que ajuda a encontrar o caminho certo. Mas nem tudo é fácil: o Raposo tenta atrapalhar, e Dora precisa ficar atenta pra não deixar ele roubar as coisas.
+No final de cada aventura, Dora consegue cumprir sua missão, ajudando alguém ou encontrando algo importante, sempre ensinando lições sobre amizade, coragem e trabalho em equipe.</p>
+
+    <img src="assets/dora.jpg" width="500">
+</div>
+
+
+<div id="historia" class="tela container mt-5">
+    <h2>História da Dora</h2>
+
+    <p>Dora é uma menina aventureira que viaja pelo mundo resolvendo desafios.</p>
+    <p>Ela sempre conta com seus amigos: Botas, Mochila e o Mapa.</p>
+    <p>Seu maior desafio é evitar o Raposo enquanto completa suas missões.</p>
+</div>
+
+
+<div id="forum" class="tela container mt-5">
+    <h2>Fórum</h2>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5>Qual a melhor aventura?</h5>
+            <p><strong>Ana:</strong> A da floresta!</p>
+            <p><strong>Lucas:</strong> A do mapa!</p>
+        </div>
+    </div>
+
+    <input type="text" id="comentario" class="form-control mt-3" placeholder="Digite um comentário">
+    <button onclick="enviar()" class="btn btn-success mt-2">Enviar</button>
+
+    <div id="lista" class="mt-3"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
