@@ -1,0 +1,29 @@
+body {
+    background-color: #df74c4;
+}
+
+.ativa {
+    display: block;
+}
+
+.login-box {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+nav {
+    display: none;
+}
+#login {
+    background-image: url('assets/dora fundo.jfif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
