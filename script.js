@@ -9,22 +9,22 @@ formulario.addEventListener('submit', function(evento){
     let senha = document.getElementById("senha").value;
 
     if(nome.trim() === ""){
-        alert(" Digite seu nome ");
+        alert("Digite seu nome");
         acessoLiberado = false;
     }
 
     if(senha.trim() === ""){
-        alert("Digite a senha para continuar a aventura");
+        alert("Digite sua senha");
         acessoLiberado = false;
     }
 
     if(nome !== "dora"){
-        alert("Usuário não reconhecido!");
+        alert("Usuário não reconhecido");
         acessoLiberado = false;
     }
 
     if(senha !== "1234"){
-        alert("Senha incorreta!");
+        alert("Senha incorreta");
         acessoLiberado = false;
     }
 
@@ -32,6 +32,6 @@ formulario.addEventListener('submit', function(evento){
         alert("Vamos explorar!");
         window.location.href = "home.html";
     } else {
-        alert("usuário ou senha incorretos");
+        alert("Usuário ou senha incorretos");
     }
 });
