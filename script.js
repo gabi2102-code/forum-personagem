@@ -31,6 +31,9 @@ formulario.addEventListener('submit', function(evento){
     if(acessoLiberado){
         alert("Vamos explorar!");
         window.location.href = "home.html";
+
+    } else {
+        alert("usuário ou senha incorretos");
     }
 });
 
